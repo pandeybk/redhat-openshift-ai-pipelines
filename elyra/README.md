@@ -9,19 +9,20 @@ We are going to cover following
 ---
 
 ## 1. Import the Custom Notebook Image
+![Import custom image](./assets/import-custom-image.png)
+
 1. In RHODS, navigate to **Settings** → **Notebook images**.
 2. Click **Import** to add a new notebook image.
 3. Under **Image location**, type or select: `elyra-pipeline-local-run` 
 (Adjust as needed for your environment.)
-
 4. Under **Name**, specify the image reference, for example: `quay.io/eformat/elyra-base:0.2.1`
-
 5. (Optional) Add a **Description** or any relevant details.
 6. Click **Import**.
 
 ---
 
 ## 2. Create a Workbench Using the Custom Image
+![Create workbench using custom image](./assets/create-workbench.png)
 1. Go to **Data Science Projects** in RHODS and open or create your project.
 2. Click **+ Create Workbench** (or **Create** if you’re making a brand new one).
 3. Give the workbench a name and choose the **Notebook image** you just imported: `quay.io/eformat/elyra-base:0.2.1`
@@ -32,6 +33,7 @@ We are going to cover following
 ---
 
 ## 3. Create (or Attach) the MinIO Data Connection
+![Create data connection](./assets/create-data-connection.png)
 During workbench creation (or while editing it later):
 1. Scroll down to **Connections**.
 2. Click **Create connection** or **Attach existing connections**.
